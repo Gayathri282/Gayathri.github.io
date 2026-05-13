@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gayathri Mukundan | Best Freelance Web Developer & B2B Tech Specialist</title>
+  <meta name="description"
+    content="Gayathri Mukundan is a top-tier Freelance Web Developer and B2B Tech Specialist. Expert in Project Management, Placement Coordination, and building high-performance web applications. Let's make something big." />
+  <meta name="keywords"
+    content="Gayathri Mukundan, best developer, freelance web developer, tech project manager, placement coordinator, B2B sales tech, web dev freelancer, best freelancer in tech" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://gayathri-mukundan.vercel.app/" />
+  <meta property="og:title" content="Gayathri Mukundan | Best Freelance Web Developer & B2B Tech Specialist" />
+  <meta property="og:description"
+    content="Making cool stuff happen since 2023. Corporate Relations × Tech Project Management." />
+  <meta property="og:image" content="https://gayathri-mukundan.vercel.app/og-image.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://gayathri-mukundan.vercel.app/" />
+  <meta property="twitter:title" content="Gayathri Mukundan | Best Freelance Web Developer & B2B Tech Specialist" />
+  <meta property="twitter:description"
+    content="Making cool stuff happen since 2023. Corporate Relations × Tech Project Management." />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Person",
+    "name": "Gayathri Mukundan",
+    "jobTitle": "Freelance Web Developer & B2B Tech Specialist",
+    "url": "https://gayathri-mukundan.vercel.app/",
+    "sameAs": [
+      "https://github.com/Gayathri282",
+      "https://linkedin.com/in/gayathrimukundan"
+    ],
+    "description": "Gayathri Mukundan is a versatile professional specializing in Web Development, B2B Tech Sales, and Placement Coordination.",
+    "knowsAbout": ["Web Development", "Project Management", "Corporate Relations", "B2B Sales", "Placement Coordination"]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Six+Caps&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Three.js canvas -->
+  <canvas id="three-canvas"></canvas>
+
+  <!-- Grain texture overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Progress bar -->
+  <div class="progress-bar" id="progress-bar"></div>
+
+  <!-- Cursor blob -->
+  <div class="cursor-blob" id="cursor-blob"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="nav-logo-text">GM</span>
+        <span class="nav-logo-dot"></span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">The Person</a>
+        <a href="#skills">The Magic</a>
+        <a href="#experience">The Hustle</a>
+        <a href="#contact">The Chat</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="hero">
+    <div class="hero-content container">
+      <div class="hero-wave" id="hero-wave">✨</div>
+      <div class="hero-top-label" id="hero-label">Ready or not, here comes</div>
+
+      <h1 class="hero-name" id="hero-name">
+        <div class="hero-name-row">
+          <span class="hero-char" data-char>G</span><span class="hero-char" data-char>A</span><span class="hero-char"
+            data-char>Y</span><span class="hero-char" data-char>A</span><span class="hero-char" data-char>T</span><span
+            class="hero-char" data-char>H</span><span class="hero-char" data-char>R</span><span class="hero-char"
+            data-char>I</span>
+        </div>
+        <div class="hero-name-row">
+          <span class="hero-char" data-char>M</span><span class="hero-char" data-char>U</span><span class="hero-char"
+            data-char>K</span><span class="hero-char" data-char>U</span><span class="hero-char" data-char>N</span><span
+            class="hero-char" data-char>D</span><span class="hero-char" data-char>A</span><span class="hero-char"
+            data-char>N</span><span class="hero-char hero-char-accent" data-char>!</span>
+        </div>
+      </h1>
+
+      <div class="hero-card glass-card">
+        <p class="hero-tagline">Making <span class="text-accent" style="background: var(--pastel-yellow);">big
+            things</span> happen as a top-rated <span class="text-accent"
+            style="background: var(--pastel-pink);">Freelancer</span>.</p>
+        <p class="hero-tagline-sub">Best Web Developer × B2B Tech Sales × Placement Expert</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-portrait-wrap">
+        <img src="/gayathri_anime_portrait_1778668745636.png" alt="Gayathri Mukundan" class="about-portrait-img">
+      </div>
+      <h2 class="section-title">The <span class="text-accent" style="background: var(--pastel-green);">best
+          developer</span><br />you've been looking for.</h2>
+
+      <div class="about-layout">
+        <div class="about-text-col">
+          <p class="about-lead">I don't just "manage projects." I breathe life into them.</p>
+          <div class="story-blocks">
+            <div class="story-block glass-card">
+              <h3>The Vibe</h3>
+              <p>Professional? Yes. Boring? Never. I'm that bridge between "we need this done" and "how did we finish it
+                so fast?"</p>
+            </div>
+            <div class="story-block glass-card">
+              <h3>The Method</h3>
+              <p>Universal translator for success. I talk dev, exec, and student fluently.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-metrics">
+          <div class="metric glass-card" style="background: var(--pastel-pink);">
+            <span class="metric-value">2+</span>
+            <span class="metric-label">Years of<br />Pure Hustle</span>
+          </div>
+          <div class="metric glass-card" style="background: var(--pastel-blue);">
+            <span class="metric-value">11/10</span>
+            <span class="metric-label">Energy<br />Levels</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS ==================== -->
+  <section class="section section-skills" id="skills">
+    <div class="container">
+      <h2 class="section-title">My secret<br /><span class="text-accent"
+          style="background: var(--pastel-yellow);">superpowers</span></h2>
+
+      <div class="skills-container">
+        <div class="skill-pill glass-card">
+          <span class="skill-icon">🍭</span>
+          <span>Stakeholder Whisperer</span>
+        </div>
+        <div class="skill-pill glass-card">
+          <span class="skill-icon">🎨</span>
+          <span>Team Conductor</span>
+        </div>
+        <div class="skill-pill glass-card">
+          <span class="skill-icon">💬</span>
+          <span>Smooth Talking</span>
+        </div>
+        <div class="skill-pill glass-card">
+          <span class="skill-icon">📍</span>
+          <span>Placement Wizard</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE ==================== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <h2 class="section-title">Where the<br /><span class="text-accent" style="background: var(--pastel-blue);">magic
+          happened</span></h2>
+
+      <div class="timeline">
+        <div class="timeline-item glass-card">
+          <span class="date-badge">2025</span>
+          <h3 class="timeline-role">Corporate Relations</h3>
+          <p>Connecting dots, bridging gaps, and making EdTech waves.</p>
+        </div>
+        <div class="timeline-item glass-card">
+          <span class="date-badge">2023—2025</span>
+          <h3 class="timeline-role">Lead Freelance</h3>
+          <p>Built apps, led teams, and survived the tech wild.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section class="section section-contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Let's make<br /><span class="text-accent"
+          style="background: var(--pastel-pink);">something big</span></h2>
+
+      <div class="contact-grid">
+        <a href="mailto:contactgayathrimukundan@gmail.com" class="contact-item glass-card">
+          <span>Email me</span>
+          <span class="contact-arrow">↗</span>
+        </a>
+        <a href="https://github.com/Gayathri282" target="_blank" rel="noopener noreferrer"
+          class="contact-item glass-card">
+          <span>GitHub</span>
+          <span class="contact-arrow">↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-flex">
+      <span class="footer-brand">GAYATHRI MUKUNDAN</span>
+      <span class="footer-copy">2026</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
